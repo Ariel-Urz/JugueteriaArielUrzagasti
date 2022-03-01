@@ -1,0 +1,1181 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.head{
+    display: flex;
+}
+
+#imgLogo{
+    padding-right: 20px;
+}
+
+.estiloTextoMenu{
+
+    font-size: 20px;
+    font-family: 'Grandstander', cursive;
+    font-weight: 700;
+    color:#000000;
+    text-decoration-line: none;
+    line-height: 2;
+}
+main{
+    border-top: solid 2px black;
+}
+
+    /*GRID Del Footer de INDEX Y JUGUETES MOBILE*/
+    
+/*.estiloFooter{
+    display:grid
+}*/
+
+
+                 /*SUBTITULOS DE LA PAGINA*/
+
+.estiloTextoUno{
+    color: #000000;
+    font-size:  30px;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 100;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    
+
+
+}
+
+.grillaMain{
+    display: grid;
+}
+
+
+    /*Subtitulos del Footer de las PAGINAS*/
+
+.estiloTextoFooter{
+    color: #ff6600;
+    font-size:  20px;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 100;
+    padding: 25px;
+
+}
+
+    /*Parrafos del Footer de las PAGINAS*/
+
+.parrafoFooter{
+    color: rgb(255, 174, 0);
+    font-size: 15px;
+    font-family: 'Fredoka One', cursive;
+    
+}
+
+                                                                     /*MOBILE*/
+
+
+
+@media screen and (max-width:600px){
+
+
+                                                     /*INDEX MOBILE*/
+
+
+    body{
+        background-color: rgb(255, 255, 255);
+    }
+
+                            /*ESTRUCUTURA DEL HEAD*/
+
+    .head{
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid black;
+    }
+
+        /*Titulo de la Pagina*/
+
+    .estiloTitulo{
+        color: #ff6f00;
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 50px;
+        font-weight: 100;
+        text-align: center;
+        text-decoration-line:underline;
+    
+    }
+
+        /*Contenedor del Menu de Navegacion*/
+
+    .contenedorMenu{
+
+        background-image: url(../img/degradado1.jpg);
+        margin: 15px;
+              
+    }
+
+        /*Estilo de los UL de la Paginas Mobile*/
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+    }
+
+                            /*ESTRUCUTURA DEL MAIN INDEX MOBILE*/
+
+    .grillaMain{        
+
+        grid-template-columns: 90%;
+        grid-template-rows: 500px 500px 500px 500px 500px;
+        grid-template-areas: "a1"
+                             "a2"
+                             "a3"
+                             "a4"
+                             "a5";
+        justify-content: center;
+        align-items: center;
+
+
+    }
+        /*Contenedor de Promocion*/
+
+    .cardPromocion{
+        background-image: url(../img/degradado1.jpg) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid black;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+           
+    }
+        /*Contenedor de Populares,Novedades,Medio de Pago,Forma de Envio*/
+
+    .contenedor{
+        background-image: url(../img/degradado1.jpg) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid black;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+           
+    }
+
+        /*Estilo de Imagen de Promocion, Populares, Novedades*/
+
+    .estiloImg{
+        width: 70%;
+        height: 60%;
+    }
+
+        /*Estilo de Imagen de Forma de Pago*/
+
+    .estiloImgPago{
+        width: 100%;
+        height: 65%;
+    }
+
+        /*Estilo de Imagen de Forma de Envio*/
+
+    .estiloImgEnvio{
+        width: 40%;
+        height: 40%;
+    
+    }
+
+        /*Estilo de los Parrafos del Main*/
+
+    .estiloParrafo{
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        font-family: 'Fredoka One', cursive;
+    
+    }
+
+                                         /*FOOTER*/
+
+    
+    footer{
+        background-color: black;
+    }
+
+                             /*ESTRUCUTURA DEL FOOTER*/       
+
+    .estiloFooter{
+        display:grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 300px 300px;
+        grid-template-areas: "a1 a2"
+                             "a3 a3";
+        justify-content: center;
+        column-gap: 55px;
+    }
+
+        /*Contenedores del Footer*/
+
+    .contenedorFooter{
+       display: flex;
+       flex-direction: column;
+       width: 70%;
+       height: 250px;
+
+    }
+
+        /*Posicion del Contenedor de Redes*/
+    
+    .estiloRedes{
+        grid-area: a3;
+        
+    }
+
+        /*Estilo del Iframe Mapa*/
+    
+    .estiloIframe{
+        width: 100%;
+        height: 100%;
+
+    }
+    
+        /*Estilo de Imagenes de Redes*/
+
+    .estiloImgRedes{
+        width: 20%;
+        height: 25%;
+        
+        
+    }
+    
+
+
+                                                   /*HTML JUGUETES MOBILE*/
+
+
+        /*Estrctura del Main de HTML Juguetes MOBILE*/
+
+    .grillaMainJuguetes{
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: 550px 550px 550px 550px 550px 550px;
+        grid-template-areas: "a1"
+                             "a2"
+                             "a3"
+                             "a4"
+                             "a5"
+                             "a6";
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+        /*Contenedores del Main de HTML Juguetes*/
+
+
+    .contenedorJuguetes{
+
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    border: 2px solid black;
+    background-image: url(../img/degradado1.jpg);
+    height: 95%;
+    
+    }
+    
+        /*Estilo de Imagenes de Juguetes*/
+
+    .estiloImgJuguetes{
+    width: 100%;
+    height: 100%;
+    }
+
+        /*Subtitulos de los Contenederes*/
+
+    .estiloTextoJuguetes{
+
+    color: #000000;
+    font-size:  30px;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 100;
+    }
+
+        /*Estilo de Texto de los Contenedores*/
+
+    .estiloTextoContedor{
+
+    font-size: 20px;
+    font-family: 'Grandstander', cursive;
+    font-weight: 600;
+    color:#000000;
+    text-decoration-line:underline;
+    line-height: 25px;
+    
+    }
+
+
+                                                /*HTML EDAD MOBILE*/
+
+        /*Estructura del Main HTML de EDAD MOBILE*/
+
+    body{
+        background-color: rgb(255, 255, 255);
+    }
+
+    .grillaMainEdad{
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: 550px 550px 550px 550px 550px 550px;
+        grid-template-areas: "a1"
+                             "a2"
+                             "a3"
+                             "a4"
+                             "a5"
+                             "a6";
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+
+    }
+
+        /*Contenedores del Main de HTML EDAD*/
+
+
+    .contenedorEdad{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    border: 2px solid black;
+    background-image: url(../img/degradado1.jpg);
+    height: 95%;
+    
+    }
+
+       /*Estilo de Imagenes de Edad*/
+
+    .estiloImgEdad{
+    width: 60%;
+    height: 60%;
+    }
+
+     /*Estilo de Subtitulo de Edad*/
+
+    .estiloSubtituloEdad{
+    
+        color: #000000;
+        font-size:  30px;
+        font-family: 'Fredoka One', cursive;
+        font-weight: 100;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+     /*Estilo contendedor de texto de Edad*/
+
+    .estiloTextoContedorEdad{
+    
+        font-size: 15px;
+        font-family: 'Grandstander', cursive;
+        font-weight: 650;
+        color:#000000;
+        text-decoration-line: none;
+        
+        
+    }
+
+     /*Estilo Parrafo de Edad*/
+    
+    .estiloParrafoEdad{
+        font-size: 15px;
+        font-family: 'Grandstander', cursive;
+        font-weight: 400;
+        color:#312727;
+        margin: 10px;
+    
+    }
+
+
+                                                /*HTML MARCA MOBILE*/
+
+            /*Estructura del Main HTML de MARCA MOBILE*/
+
+    body{
+        background-color: rgb(255, 255, 255);
+    }
+
+    .grillaMainMarca{
+        
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 200px 200px 200px 200px 200px 200px;
+        grid-template-areas: "a1 a2"
+                             "a3 a4"
+                             "a5 a6"
+                             "a7 a8"
+                             "a9 a10"
+                             "a11 a12";
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 25px;
+        
+
+    }
+
+     /*Estilo de Contenedores de Marcas*/
+
+    .contenedorMarca{
+        
+        width: 70%;
+        height: 45%;
+        padding-left: 40px ;
+    
+    
+    }
+
+     /*Estilo de Imagen de Marca*/
+    
+    .estiloImgMarca{
+        width: 100%;
+        height: 100%;
+    
+    }
+
+     /*Estilo Texto de Marca*/
+    
+    
+    .estiloTextoMarca{
+    
+        color: #000000;
+        font-size:  30px;
+        font-family: 'Fredoka One', cursive;
+        font-weight: 100;
+        text-align: center;
+        padding-top: 20px;
+        
+    }
+
+
+                                                /*HTML PROMOCION MOBILE*/
+
+            /*Estructura del Main HTML de PROMOCION MOBILE*/
+
+    body{
+        background-color: rgb(0, 255, 251);
+    }
+
+    .grillaMainPromocion{
+        
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: 400px 400px 400px 400px;
+        grid-template-areas: "a1"
+                             "a2"
+                             "a3"
+                             "a4";
+        justify-content: space-evenly;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 25px;
+        row-gap: 20px;
+    
+    }
+
+     /*Contenedor del Video*/
+
+      
+    .contenedorIframe{
+        width: 100%;
+        height: 100%;
+        border: 2px solid black;
+        grid-area: a1;
+    
+    }
+
+     /*Contenedor de Promociones*/
+
+    .contenedorPromocion{
+        background-image: url(../img/degradado1.jpg);
+        width: 100%;
+        height: 100%;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+     /*Estilo de Texto de Promocion*/
+    
+    .estiloTextoPromocion{
+        color: #000000;
+        font-size:  30px;
+        font-family: 'Fredoka One', cursive;
+        font-weight: 100;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+       
+    }
+    
+     /*Estilo imagen de promocion*/   
+    
+    .estiloImgPromocion{
+        width: 60%;
+        height: 65%;
+    }
+
+     /*Estilo de Parrafo de Promocion*/
+    
+    .estiloParrafoPromocion{
+        font-size: 20px;
+        font-family: 'Grandstander', cursive;
+        font-weight: 400;
+        color:#000000;
+        padding-left: 15px;
+        padding-top: 10px;
+    }
+
+                                                    /*HTML CONTACNTO MOBILE*/
+
+            /*Estructura del Main HTML de CONTACTO MOBILE*/
+
+    body{
+        background-color: #dafcf0;
+    }
+
+     /*Subtitulo de Contacto*/
+
+    .mensaje{
+        font-size: 30px;
+        font-family: 'Fredoka One', cursive;
+        font-weight: 300;
+        margin-top: 100px;
+    }
+
+     /*Contenedor de Formulario*/
+
+
+    .contenedorFormulario{
+    
+        width: 50%;
+        height: 500px;
+        border: 2px solid black;
+        margin: 100px;
+        
+    }
+
+     /*Formulario*/
+
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+       
+    }
+
+    /*Casilla de Formulario*/
+
+    .estiloCasilla{
+        width: 80%;
+        line-height: 18px;
+
+    }
+
+    /*Texto de Formulario*/
+    
+    .estiloTextoFormulario{
+        font-size: 20px;
+        font-family: 'Fredoka One', cursive;
+        font-weight: 300;
+        width: 100%;
+        
+    }
+
+    /*Boton de Formulario*/
+    
+    .estiloBoton{
+        width: 125px;
+        height: 30px;
+        background-color: #000000;
+        color: #ffffff;
+        border: 1px solid rgb(255, 255, 255);
+        font-family: 'Grandstander', cursive;
+    
+    }
+  
+
+}
+
+
+
+
+
+
+                                                             /*DESKTOP*/
+
+
+@media screen and (min-width:600px){
+
+    body{
+        background-color: #dafcf0;
+        
+    }
+
+                                                /*INDEX DEL DESKTOP*/
+
+              /*ESTRUCUTURA DEL HEAD DESKTOP*/
+
+    .head{
+
+        flex-direction: row-reverse;
+        justify-content:center;
+        align-items: center;
+        border-bottom: 2px solid black;
+    }
+
+        /*Estilo del Titulo de la Pagina*/
+
+    .estiloTitulo{
+        color: #ff6f00;
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 70px;
+        font-weight: 100;
+        text-align: center;
+        text-decoration-line:underline;
+    
+    }
+
+        /*Contendero del Menu*/
+
+    .contenedorMenu{
+
+        background-image: url(../img/degradado1.jpg);
+        margin: 15px;
+        height: 75px;  
+        
+    }
+
+        /*Estilo de los UL de la Paginas Desktop*/
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style-type: none;
+        height: 75px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+                /*ESTRCUTURA DEL MAIN INDEX DESKTOP*/
+
+    .grillaMain{        
+
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 650px 500px 500px;
+        grid-template-areas: "a1 a1"
+                             "a2 a3"
+                             "a4 a5";
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+        /*Contenedor de Promocion*/
+
+    .cardPromocion{
+        background-image: url(../img/degradado1.jpg) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid black;
+        width: 75%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-area: a1
+        
+    }
+
+        /*Contenedor de Pupalares,Novedades,Forma de Pago, Forma de envio*/
+    
+    .contenedor{
+        background-image: url(../img/degradado1.jpg) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid black;
+        width: 90%;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+        /*Estilo de Imagenes de los Contenedores*/
+
+    .estiloImg{
+        width: 55%;
+        height: 65%;
+    }
+
+        /*Estilo de Imagenes de Pago*/
+
+    .estiloImgPago{
+        width: 100%;
+        height: 65%;
+        margin-top: 50px;
+    }
+
+        /*Estilo de Imagenes de Envio*/
+
+
+    .estiloImgEnvio{
+        width: 40%;
+        height: 40%;
+    
+    }
+
+        /*Estilo del Parrafo de los Contenedores*/
+
+    .estiloParrafo{
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        font-family: 'Fredoka One', cursive;
+    
+    }
+
+                         /*ESTRUCTURA DEL FOOTER DESKTOP*/
+
+    footer{
+        background-color: black;
+    }
+
+    .estiloFooter{
+        display:flex;
+        flex-direction: row;
+        
+    }
+    .contenedorFooter{
+       display: flex;
+       flex-direction: column;
+       width: 70%;
+       height: 250px;
+       margin: 10px;
+       align-items: center;
+       
+    }
+
+        /*Poscicion de Contenedor de Redes*/
+    
+    .estiloRedes{
+        grid-area: a3;
+        
+    }
+
+        /*Estilo de Iframe Mapa*/
+    
+    .estiloIframe{
+        width: 50%;
+        height: 100%;
+        padding: 10px;
+
+    }
+
+        /*Estilo Imagenes de Redes*/
+
+
+    .estiloImgRedes{
+        width: 20%;
+        height: 25%;
+        
+        
+    }
+
+
+                                        /*HTML JUGUETES DESKTOP*/
+
+                /*ESTRUCTURA DEL MAIN JUGUETES DESKTOP*/
+
+    .grillaMainJuguetes{
+        display: grid;
+        grid-template-columns: 32% 32% 32%;
+        grid-template-rows: 550px 550px;
+        grid-template-areas: "a1 a2 a3"
+                             "a4 a5 a6";
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        margin-bottom: 25px;
+    }
+
+        /*Contenedores de Juguetes del Main*/
+
+    .contenedorJuguetes{
+
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    border: 2px solid black;
+    background-image: url(../img/degradado1.jpg);
+    height: 95%;
+    width: 90%;
+    
+    }
+
+        /*Estilo de Imagenes de Juguetes*/
+    
+    .estiloImgJuguetes{
+    width: 90%;
+    height: 90%;
+    }
+
+        /*Subtitulos de Contenedores de Juguetes*/
+
+    .estiloTextoJuguetes{
+
+    color: #000000;
+    font-size:  30px;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 400;
+    }
+
+        /*Estilo de los textos del Contenedor de Juguetes*/
+
+    .estiloTextoContedor{
+
+    font-size: 18px;
+    font-family: 'Grandstander', cursive;
+    font-weight: 600;
+    color:#000000;
+    text-decoration-line:underline;
+    padding-left: 10px;
+    }
+
+
+                                         /*HTML EDAD DESKTOP*/
+
+
+        /*Estructura del Main HTML de EDAD MOBILE*/
+
+    body{
+        background-color: #dafcf0;
+    }
+
+    .grillaMainEdad{
+
+        display: grid;
+        grid-template-columns: 32% 32% 32%;
+        grid-template-rows: 550px 550px;
+        grid-template-areas: "a1 a2 a3"
+                             "a4 a5 a6";
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        margin-bottom: 25px;
+
+    }
+
+        /*Contenedores del Main de HTML EDAD*/
+
+
+    .contenedorEdad{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    border: 2px solid black;
+    background-image: url(../img/degradado1.jpg);
+    height: 95%;
+    width: 90%;
+    
+    }
+
+       /*Estilo de Imagenes de Edad*/
+
+    .estiloImgEdad{
+    width: 60%;
+    height: 60%;
+    }
+
+    /*Estilo de Subtitulo de Edad*/
+
+    .estiloSubtituloEdad{
+    
+        color: #000000;
+        font-size:  30px;
+        font-family: 'Fredoka One', cursive;
+        font-weight: 100;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    /*Estilo de Texto de Edad*/
+
+    .estiloTextoContedorEdad{
+    
+        font-size: 15px;
+        font-family: 'Grandstander', cursive;
+        font-weight: 650;
+        color:#000000;
+        text-decoration-line: none;
+        
+    }
+
+    /*Estilo de Parrafo de Edad*/
+    
+    .estiloParrafoEdad{
+        font-size: 15px;
+        font-family: 'Grandstander', cursive;
+        font-weight: 400;
+        color:#312727;
+        margin: 10px;
+    
+    }
+
+                                                    /*HTML MARCA DESKTOP*/
+
+            /*Estructura del Main HTML de MARCA DESKTOP*/
+
+    body{
+        background-color: #dafcf0;
+    }
+
+    .grillaMainMarca{
+        
+        display: grid;
+        grid-template-columns: 22% 22% 22% 22%;
+        grid-template-rows: 200px 200px 200px;
+        grid-template-areas: "a1 a2 a3 a4"
+                             "a5 a6 a7 a8"
+                             "a9 a10 a11 a12";
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 25px;
+        
+
+    }
+
+    /*Contenedor de Marca*/
+
+    .contenedorMarca{
+        
+        width: 70%;
+        height: 45%;
+        padding-left: 40px ;
+    
+    
+    }
+
+    /*Estilo de Imagen de Marca*/
+    
+    .estiloImgMarca{
+        width: 100%;
+        height: 100%;
+    
+    }
+    
+    /*Estilo de texto de Marca*/
+    
+    .estiloTextoMarca{
+    
+        color: #000000;
+        font-size:  30px;
+        font-family: 'Fredoka One', cursive;
+        font-weight: 100;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+
+                                               /*HTML PROMOCION DESKTOP*/
+
+            /*Estructura del Main HTML de PROMOCION DESKTOP*/
+
+    body{
+        background-color: #dafcf0;
+    }
+
+    .grillaMainPromocion{
+        
+        display: grid;
+        grid-template-columns: 28% 28% 28%;
+        grid-template-rows: 550px 550px;
+        grid-template-areas: "a1 a1 a1"
+                             "a2 a3 a4";
+        justify-content: space-evenly;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 25px;
+        row-gap: 20px;
+    
+    }
+
+    /*Contenedor del Video*/
+
+      
+    .contenedorIframe{
+        width: 100%;
+        height: 100%;
+        grid-area: a1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    /*Estilo de Iframe*/
+
+    .estiloIframe{
+        width: 80%;
+        height: 90%;
+        
+    }
+
+    /*Contenedor de Promocion*/
+
+    .contenedorPromocion{
+        background-image: url(../img/degradado1.jpg);
+        width: 100%;
+        height: 100%;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /*Estilo de Texto de Promocion*/
+    
+    .estiloTextoPromocion{
+        color: #000000;
+        font-size:  30px;
+        font-family: 'Fredoka One', cursive;
+        font-weight: 100;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+       
+    }
+
+    /*Estilo de Imagenes de Promociones*/
+    
+    
+    .estiloImgPromocion{
+        width: 60%;
+        height: 65%;
+    }
+
+    /*Estilo de Parrafo de Promocion*/
+    
+    .estiloParrafoPromocion{
+        font-size: 20px;
+        font-family: 'Grandstander', cursive;
+        font-weight: 400;
+        color:#000000;
+        padding-left: 15px;
+        padding-top: 10px;
+    }
+
+
+                                                        /*HTML CONTACNTO DESKTOP*/
+
+            /*Estructura del Main HTML de CONTACTO DESKTOP*/
+
+    body{
+        background-color: #dafcf0
+    }
+
+    /*Subtitulo de Contacto*/
+
+    .mensaje{
+        font-size: 30px;
+        font-family: 'Fredoka One', cursive;
+        font-weight: 300;
+        margin-top: 100px;
+        margin-left: 20px;
+    }
+
+    /*Contenedor de Formulario*/
+
+
+    .contenedorFormulario{
+    
+        width: 50%;
+        height: 500px;
+        border: 2px solid black;
+        margin: 100px;
+        margin-left: 250px;
+        
+    }
+
+    /*Estilo Formulario*/
+
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+       
+    }
+
+    /*Estilo de las Casillas de Formulario*/
+
+    .estiloCasilla{
+        width: 80%;
+        line-height: 18px;
+
+    }
+
+    /*Estilo de Texto de Formulario*/
+    
+    .estiloTextoFormulario{
+        font-size: 20px;
+        font-family: 'Fredoka One', cursive;
+        font-weight: 300;
+        width: 75%;
+        
+    }
+
+    /*Estilo de Boton de Formulario*/
+    
+    .estiloBoton{
+        width: 125px;
+        height: 30px;
+        background-color: #000000;
+        color: #ffffff;
+        border: 1px solid rgb(255, 255, 255);
+        font-family: 'Grandstander', cursive;
+    
+    }
+  
+
+
+}
+
+                                                /*FIN DESAFIO COMPLEMENTARIO*/
+
+
+
+
