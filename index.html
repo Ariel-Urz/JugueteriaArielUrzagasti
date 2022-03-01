@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jugueteria A&D</title>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +20,7 @@
         <div class="head">
 
             <h1 class="estiloTitulo">JUGUETERIA A&D</h1>
-            <a href="index.html"><img id="imgLogo" src="img/Logo.png" alt=""></a>
+            <a href="index.html"><img class="animate__animated animate__fadeInLeftBig" id="imgLogo" src="img/Logo.png" alt=""></a>
 
         </div>
 
@@ -32,6 +34,7 @@
                 <li><a class="estiloTextoMenu" href="html/Marca.html">Marca</a></li>
                 <li><a class="estiloTextoMenu" href="html/Promociones.html">Promociones</a></li>
                 <li><a class="estiloTextoMenu" href="html/Contacto.html">Contacto</a></li>
+                <li><a class="estiloTextoMenu" href="html/QuienesSomos.html">Quienes Somos</a></li>
             </ul>
 
         </nav>
@@ -40,7 +43,7 @@
     <main>
                                      <!--PROMOCIONES-->
 
-        <section class="grillaMain">
+        <section class="grillaMain" data-aos="fade-left">
 
             <div class="cardPromocion">
                 <h2 class="estiloTextoUno">PROMOCIONES</h2>
@@ -51,14 +54,14 @@
         
                                      <!--PUPULARES-->
 
-            <div class="contenedor">
+            <div class="contenedor" data-aos="fade-right">
                 <h2 class="estiloTextoUno">POPULARES</h2 >
                 <img class="estiloImg" src="img/SpiderMan.png" alt="">
                 <p class="estiloParrafo"> Descripcion: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, similique. Accusantium, deleniti maiores? Temporibus alias impedit blanditiis obcaecati repudiandae neque doloremque id explicabo aliquid reiciendis illo nam tempora, quae corporis.</p>
             </div>
                                     <!--NOVEDADES-->
 
-            <div class="contenedor">
+            <div class="contenedor" data-aos="fade-left">
                 <h2 class="estiloTextoUno">NOVEDADES</h2>
                 <img class="estiloImg" src="img/CryBabies.png" alt="" class="novedades">
                 <p class="estiloParrafo"> Descripcion: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque laudantium deleniti facere, odio, neque voluptas ipsam non aliquid recusandae dolore quia id dolorem sed nam eos cupiditate culpa nihil pariatur.</p>
@@ -69,14 +72,14 @@
                                     <!--MEDIO DE PAGO-->
 
         
-            <div class="contenedor">
+            <div class="contenedor" data-aos="fade-right">
                 <h3 class="estiloTextoUno">MEDIO DE PAGOS</h3>
                 <img class="estiloImgPago" src="img/Redessociales/mediodepago.png" alt="">
             </div>
             
                                     <!--FORMA DE EMVIO-->
 
-            <div class="contenedor">
+            <div class="contenedor" data-aos="fade-left">
                 <h3 class="estiloTextoUno">FORMA DE ENVIO</h3>
                 <img class="estiloImgEnvio" src="img/Envio1.png" alt="">
                 <img class="estiloImgEnvio" src="img/Envio2.png" alt="">
@@ -88,7 +91,11 @@
     
     <footer>
 
-        <h4 class="estiloTextoFooter">CONTACTO</h4>
+        <div class="posicionSubt">
+            <h4 class="estiloTextoFooter">CONTACTO</h4>
+            <h5 class="estiloTextoFooter">REDES SOCIALES</h5>
+        </div>
+
         <section class="estiloFooter">
 
                                  <!--CONTACTO FOOTER-->
@@ -97,7 +104,7 @@
                 <p class="parrafoFooter">Tel: 564654564</p>
                 <p class="parrafoFooter">juegueteria@gmail.com</p>
                 <p class="parrafoFooter">San Salvador de Jujuy Argentina</p>
-                <iframe class="estiloIframe" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d97928.01935824212!2d-65.41053847919984!3d-24.197258822856472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1643663268477!5m2!1ses!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe class="estiloIframe0" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d97928.01935824212!2d-65.41053847919984!3d-24.197258822856472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1643663268477!5m2!1ses!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
             </div>
 
@@ -110,19 +117,22 @@
                 <p class="parrafoFooter">Legales</p>
                 <p class="parrafoFooter">Termino y condiciones</p>
                 <p class="parrafoFooter">Trabaja con nosotros</p>
+                <p class="parrafoFooter" >Ventas empresariales</p>
+                <p class="parrafoFooter">Sucursales</p>
+                <p class="parrafoFooter">Preguntas frecuentes</p>
 
             </div>
 
 
                          <!--REDES--> 
 
+
+            
             <div class="estiloRedes">  
 
-                <h5 class="estiloTextoFooter">REDES SOCIALES</h5>
                 <a  href="https://www.facebook.com/"><img class="estiloImgRedes" src="img/Redessociales/facebook.png" alt=""></a>
                 <a  href="https://www.instagram.com/"><img class="estiloImgRedes" src="img/Redessociales/Instagram.png" alt=""></a>
                 <a  href="https://www.whatsapp.com/"><img class="estiloImgRedes" src="img/Redessociales/Whatsapp.png" alt=""></a>
-
                
             </div>
 
@@ -131,6 +141,9 @@
         
 
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
