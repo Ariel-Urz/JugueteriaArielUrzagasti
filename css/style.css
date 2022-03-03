@@ -21,7 +21,7 @@
 
 .estiloTextoMenu{
 
-    font-size: 20px;
+    font-size: 19px;
     font-family: 'Grandstander', cursive;
     font-weight: 700;
     color:#000000;
@@ -81,6 +81,14 @@ main{
     
 }
 
+.btn-primary{
+    background-color: black;
+    animation: all 1s;
+}
+.btn-primary:hover{
+    transform: scale(1.1,1.1);
+}
+
                                                                      /*MOBILE*/
 
 
@@ -121,7 +129,7 @@ main{
 
     .contenedorMenu{
 
-        background-image: url(../img/degradado1.jpg);
+        background-image: linear-gradient(to left, #dafcf0,rgb(255, 132, 0),rgb(255, 132, 0), #dafcf0);
         margin: 15px;
              
     }
@@ -255,13 +263,17 @@ main{
         /*Estilo de Imagenes de Redes*/
 
     .estiloImgRedes{
-        width: 20%;
         height: 25%;
-        
-        
+        filter: grayscale(1);
+        transition: all 1s;
+         
     }
-    
+    .estiloImgRedes:hover{
+        filter: grayscale(0);
+        transform: scale(1.5,1.5);
+    }
 
+    
 
                                                    /*HTML JUGUETES MOBILE*/
 
@@ -749,18 +761,16 @@ main{
 
     .contenedorMenu{
 
-        background-image: url(../img/degradado1.jpg);
+        background-image: linear-gradient(to left, #dafcf0,rgb(255, 132, 0),rgb(255, 132, 0), #dafcf0);
         margin: 15px;
-        height: 75px;  
-        position: sticky;
-        top:0px;
+        height: 150px;  
         border: solid black 1px;
         transition: all 1.5s;
         z-index: 1;
         
     }
     .contenedorMenu:hover{
-        transform: scale(1.015,1.015);
+        transform: scale(0.9,0.8);
     }
     
 
@@ -802,8 +812,12 @@ main{
         display: flex;
         flex-direction: column;
         align-items: center;
-        grid-area: a1
-        
+        grid-area: a1;
+        justify-content: center;
+    }
+    #carouselExampleIndicators{
+        grid-area: a1;
+        width: 60%;
     }
 
         /*Contenedor de Pupalares,Novedades,Forma de Pago, Forma de envio*/
@@ -891,7 +905,7 @@ main{
     
     .estiloIframe0{
         width: 45%;
-        height: 100%;
+        height: 60%;
         padding: 10px;
 
     }
@@ -901,9 +915,15 @@ main{
 
     .estiloImgRedes{
         width: 20%;
+        padding-left: 10px;
         height: 20%;
-        
-        
+        filter: grayscale(1);
+        transition: all 1s;
+    }
+
+    .estiloImgRedes:hover{
+    filter: grayscale(0);
+    transform: scale(1.5,1.5);
     }
 
 
