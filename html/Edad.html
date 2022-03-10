@@ -7,6 +7,8 @@
     <title>Edad</title>
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,18 +28,41 @@
 
 
                                     <!--MENU-->
-        <nav class="contenedorMenu">                                                      
-            <ul>
-                <li><a class="estiloTextoMenu" href="../index.html">Inicio</a></li>
-                <li><a class="estiloTextoMenu" href="Juguetes.html">Juguetes</a></li>
-                <li><a class="estiloTextoMenu" href="Edad.html">Edad</a></li>
-                <li><a class="estiloTextoMenu" href="Marca.html">Marca</a></li>
-                <li><a class="estiloTextoMenu" href="Promociones.html">Promociones</a></li>
-                <li><a class="estiloTextoMenu" href="Contacto.html">Contacto</a></li>
-                <li><a class="estiloTextoMenu" href="QuienesSomos.html">Quienes Somos</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light contenedorMenu">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img src="../img/NavBar.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                
+                  <li class="nav-item">
+                    <a class="estiloTextoMenu" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="estiloTextoMenu" href="Juguetes.html">Juguetes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="estiloTextoMenu" href="Edad.html">Edad</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="estiloTextoMenu" href="Marca.html">Marca</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="estiloTextoMenu" href="Promociones.html">Promociones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="estiloTextoMenu" href="Contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="estiloTextoMenu" href="QuienesSomos.html">Nosotros</a>
+                  </li>
 
-        </nav>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </head>
 
     <main>
@@ -51,9 +76,10 @@
                 <img class="estiloImgEdad" src="../img/0a12meses.png" alt="">
                 <p class="estiloParrafoEdad">El juego es uno de los pilares básicos del desarrollo de los niños desde los primeros meses de vida, ya que aporta muchos beneficios: favorece el desarrollo físico y de la motricidad fina, estimula la motricidad gruesa y fomenta el aprendizaje temprano, entre otros.</p>
                 <ul>
-                    <li><a class="estiloTextoContedorEdad" href="../html/Edad/0a12meses/alfombra.html"> Alfombra</a></li>
-                    <li><a class="estiloTextoContedorEdad" href="../html/Edad/0a12meses/Duermebebes.html"> Duerme Bebes </a></li>
-                    <li><a class="estiloTextoContedorEdad" href="../html/Edad/0a12meses/Mas.html"> Mas </a></li>
+                    <a href="../html/Edad/0a12meses/alfombra.html"><button type="button" class="btn btn-primary btn-sm">Alfobras</button></a>
+                    <a href="../html/Edad/0a12meses/Duermebebes.html"><button type="button" class="btn btn-primary btn-sm">Duerme Bebes</button></a>
+                    <a href="../html/Edad/0a12meses/Mas.html"><button type="button" class="btn btn-primary btn-sm">Mas</button></a>
+
                 </ul>
 
             </div>
@@ -65,10 +91,11 @@
                 <img class="estiloImgEdad" src="../img/1a3Años.png" alt="">
                 <p class="estiloParrafoEdad"> Cumplido el primer año, el niño empieza a adquirir más potencia y musculatura para poder dar sus primeros pasos, si es que no lo ha hecho hasta ahora. Por tanto, son ideales los juguetes que le ayuden en el proceso de ponerse de pie y empezar a andar.</p>
                 <ul>
-                    <li><a class="estiloTextoContedorEdad" href="../html/Edad/1a3Años/ConBotones-Sonido.html">Sonidos</a></li>
-                    <li><a class="estiloTextoContedorEdad" href="../html/Edad/1a3Años/BloquesEncaje-Contruccion.html"> Bloques de Encaje</a></li>
-                    <li><a class="estiloTextoContedorEdad" href="../html/Edad/1a3Años/ParaDesplazarse.html"> Para Desplazarse </a></li>
-                    <li><a class="estiloTextoContedorEdad" href="../html/Edad/1a3Años/Mas.html"> Mas </a></li>
+                    <a href="../html/Edad/1a3Años/ConBotones-Sonido.html"><button type="button" class="btn btn-primary btn-sm">Sonidos</button></a>
+                    <a href="../html/Edad/1a3Años/BloquesEncaje-Contruccion.html"><button type="button" class="btn btn-primary btn-sm">Bloques de Encastre</button></a>
+                    <a href="../html/Edad/1a3Años/ParaDesplazarse.html"><button type="button" class="btn btn-primary btn-sm">Desplazarse</button></a>
+                    <a href="../html/Edad/1a3Años/Mas.html"><button type="button" class="btn btn-primary btn-sm">Mas</button></a>
+
                 </ul>
 
             </div>
@@ -78,11 +105,12 @@
             <div class="contenedorEdad"  data-aos="zoom-in">
                 <h2 class="estiloSubtituloEdad">Edad 3 a 6 Años</h2>
                 <img class="estiloImgEdad" src="../img/3a6Años.png" alt="">
-                <p class="estiloParrafoEdad">Clasificar ladrillos, animales y figuras son importantes formas de jugar a los 3 años, pero poco a poco y a lo largo de este año lo irán sustituyendo por el juego de roles, asumiendo sus diferentes características. Juegos simbólicos y estimulación del lenguaje y la imaginación.</p>
+                <p class="estiloParrafoEdad">Poco a poco y a lo largo de este año irán sustituyendo por el juego de roles, asumiendo sus diferentes características. Juegos simbólicos y estimulación del lenguaje y la imaginación.</p>
                 <ul>
-                    <li><a class="estiloTextoContedorEdad" href="../html/Edad/3a6Años/ContruccionPuzle.html">Contruccion y Puzle</a></li>
-                    <li><a class="estiloTextoContedorEdad" href="../html/Edad/3a6Años/EstumulacionDeLenguaje.html"> Estimulacion De Lenguaje</a></li>
-                    <li><a class="estiloTextoContedorEdad" href="../html/Edad/3a6Años/Mas.html"> Mas </a></li>
+                    <a href="../html/Edad/3a6Años/ContruccionPuzle.html"><button type="button" class="btn btn-primary btn-sm">Puzle</button></a>
+                    <a href="../html/Edad/3a6Años/EstumulacionDeLenguaje.html"><button type="button" class="btn btn-primary btn-sm">Estimulacion</button></a>
+                    <a href="../html/Edad/3a6Años/Mas.html"><button type="button" class="btn btn-primary btn-sm">Mas</button></a>
+
                 </ul>
 
             </div>
@@ -99,9 +127,10 @@
                 <img class="estiloImgEdad" src="../img/6a8Años.png" alt="">
                 <p class="estiloParrafoEdad">Educativos, colectivos, de retos, de responsabilidades, de habilidad... Así son los juguetes más recomendados e indicativos para niños entre los 6 y 8 años</p>
                 <ul>
-                    <li><a class="estiloTextoContedorEdad" href="../html/JuegosdeMesa/MasJuegosdeMesa.html">Juegos de Mesa</a></li>
-                    <li><a class="estiloTextoContedorEdad" href="../html/Marca y Colecciones/Avengers.html">Personajes</a></li>
-                    <li><a class="estiloTextoContedorEdad" href="../html/Edad/6a8Años/Mas.html"> Mas </a></li>
+                    <a href="../html/JuegosdeMesa/MasJuegosdeMesa.html"><button type="button" class="btn btn-primary btn-sm">Juegos de Mesa</button></a>
+                    <a href="../html/Marca y Colecciones/Avengers.html"><button type="button" class="btn btn-primary btn-sm">Personajes</button></a>
+                    <a href="../html/Edad/6a8Años/Mas.html"><button type="button" class="btn btn-primary btn-sm">Mas</button></a>
+
                 </ul>
 
             </div>
@@ -114,9 +143,10 @@
                 <img class="estiloImgEdad" src="../img/8a10Años.png" alt="">
                 <p class="estiloParrafoEdad">Es una edad de cambios, en la que empiezan a desechar muchos de los juguetes que les han gustado hasta ahora y empiezan a entretenerse con otro tipo de juegos, en este sentido, a los niños entre 8-10 años les gustan los juegos de equipo y acción, de robótica, radiocontrol    </p>
                 <ul>
-                    <li><a class="estiloTextoContedorEdad" href="../html/Edad/8a10años/RadioControl.html">Radio Control</a></li>
-                    <li><a class="estiloTextoContedorEdad" href="../html/Edad/8a10años/Armas.html"> Armas</a></li>
-                    <li><a class="estiloTextoContedorEdad" href="../html/Edad/8a10años/Mas.html"> Mas </a></li>
+                    <a href="../html/Edad/8a10años/RadioControl.html"><button type="button" class="btn btn-primary btn-sm">Radio Control</button></a>
+                    <a href="../html/Edad/8a10años/Armas.html"><button type="button" class="btn btn-primary btn-sm">Armas</button></a>
+                    <a href="../html/Edad/8a10años/Mas.html"><button type="button" class="btn btn-primary btn-sm">Mas</button></a>
+
                 </ul>
             </div>
 
@@ -129,10 +159,11 @@
                 <img class="estiloImgEdad" src="../img/10+.png" alt="">
                 <p class="estiloParrafoEdad"> Todo tipo de aparatos deportivos, bicis, monopatines. Mecanos de metal y maquetas, construcciones complejas.Juegos manuales, de estrategia y reflexión.Juegos audiovisuales, electrónicos y experimentos   </p>
                 <ul>
-                    <li><a class="estiloTextoContedorEdad" href="../html/Edad/10+/Bicicletas.html">Bicicletas</a></li>
-                    <li><a class="estiloTextoContedorEdad" href="../html/Edad/10+/Patines.html"> Patines</a></li>
-                    <li><a class="estiloTextoContedorEdad" href="../html/Edad/10+/JuegosdeMesa.html"> Juegos de Mesa </a></li>
-                    <li><a class="estiloTextoContedorEdad" href="../html/Edad/10+/Mas.html"> Mas</a></li>
+                    <a href="../html/Edad/10+/Bicicletas.html"><button type="button" class="btn btn-primary btn-sm">Bicicletas</button></a>
+                    <a href="../html/Edad/10+/Patines.html"><button type="button" class="btn btn-primary btn-sm">Patines</button></a>
+                    <a href="../html/Edad/10+/JuegosdeMesa.html"><button type="button" class="btn btn-primary btn-sm">Juegos de Mesa</button></a>
+                    <a href="../html/Edad/10+/Mas.html"><button type="button" class="btn btn-primary btn-sm"> Mas</button></a>
+
                 </ul>
                     
             </div>
@@ -146,53 +177,34 @@
     </main>
     
     <footer>
+        <h4 class="estiloTextoFooter">CONTACTO</h4>
 
-        <div class="posicionSubt">
-            <h4 class="estiloTextoFooter">CONTACTO</h4>
-            <h5 class="estiloTextoFooter">REDES SOCIALES</h5>
-        </div>
+        <section class="container">
 
-        <section class="estiloFooter">
-
-                                 <!--CONTACTO FOOTER-->
-            
-            <div class="contenedorFooter">
-                <p class="parrafoFooter">Tel: 564654564</p>
-                <p class="parrafoFooter">juegueteria@gmail.com</p>
-                <p class="parrafoFooter">San Salvador de Jujuy Argentina</p>
-                <iframe class="estiloIframe0" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d97928.01935824212!2d-65.41053847919984!3d-24.197258822856472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1643663268477!5m2!1ses!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-            </div>
-
-    
-                         <!--LEGALES FOOTER-->
-
-            <div  class="contenedorFooter">
-
-                <p class="parrafoFooter">Ayuda</p>
-                <p class="parrafoFooter">Legales</p>
-                <p class="parrafoFooter">Termino y condiciones</p>
-                <p class="parrafoFooter">Trabaja con nosotros</p>
-
-            </div>
-
-
-                         <!--REDES--> 
-
-
-            
-            <div class="estiloRedes">  
-
-                <a  href="https://www.facebook.com/"><img class="estiloImgRedes" src="../img/Redessociales/facebook.png" alt=""></a>
-                <a  href="https://www.instagram.com/"><img class="estiloImgRedes" src="../img/Redessociales/Instagram.png" alt=""></a>
-                <a  href="https://www.whatsapp.com/"><img class="estiloImgRedes" src="../img/Redessociales/Whatsapp.png" alt=""></a>
-               
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <p class="parrafoFooter">Tel: 564654564</p>
+                    <p class="parrafoFooter">juegueteria@gmail.com</p>
+                    <p class="parrafoFooter">San Salvador de Jujuy Argentina</p>
+                    <iframe class="estiloIframe0" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d97928.01935824212!2d-65.41053847919984!3d-24.197258822856472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1643663268477!5m2!1ses!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="col-12 col-md-3">
+                    <p class="parrafoFooter">Ayuda</p>
+                    <p class="parrafoFooter">Legales</p>
+                    <p class="parrafoFooter">Termino y condiciones</p>
+                    <p class="parrafoFooter">Trabaja con nosotros</p>
+                    <p class="parrafoFooter" >Ventas empresariales</p>
+                    <p class="parrafoFooter">Sucursales</p>
+                    <p class="parrafoFooter">Preguntas frecuentes</p>
+                </div>
+                <div class="col-12 col-md-3">
+                    <a  href="https://www.facebook.com/"><img class="estiloImgRedes" src="../img/Redessociales/facebook.png" alt=""></a>
+                    <a  href="https://www.instagram.com/"><img class="estiloImgRedes" src="../img/Redessociales/Instagram.png" alt=""></a>
+                    <a  href="https://www.whatsapp.com/"><img class="estiloImgRedes" src="../img/Redessociales/Whatsapp.png" alt=""></a>
+                </div>
             </div>
 
         </section>
-
-        
-
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

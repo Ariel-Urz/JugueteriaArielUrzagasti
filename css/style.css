@@ -32,12 +32,6 @@ main{
     border-top: solid 2px black;
 }
 
-    /*GRID Del Footer de INDEX Y JUGUETES MOBILE*/
-    
-/*.estiloFooter{
-    display:grid
-}*/
-
 
                  /*SUBTITULOS DE LA PAGINA*/
 
@@ -99,9 +93,6 @@ main{
                                                      /*INDEX MOBILE*/
 
 
-    body{
-        background-color: rgb(255, 255, 255);
-    }
 
                             /*ESTRUCUTURA DEL HEAD*/
 
@@ -196,7 +187,7 @@ main{
 
     .estiloImgPago{
         width: 80%;
-        height: 65%;
+        height: 40%;
     }
 
         /*Estilo de Imagen de Forma de Envio*/
@@ -353,7 +344,7 @@ main{
     .grillaMainEdad{
         display: grid;
         grid-template-columns: 90%;
-        grid-template-rows: 550px 550px 550px 550px 550px 550px;
+        grid-template-rows: 650px 650px 650px 650px 650px 650px;
         grid-template-areas: "a1"
                              "a2"
                              "a3"
@@ -391,8 +382,8 @@ main{
 
     .estiloSubtituloEdad{
     
-        color: #000000;
-        font-size:  30px;
+        color: #dafcf0;
+        font-size:  25px;
         font-family: 'Fredoka One', cursive;
         font-weight: 100;
         padding-top: 20px;
@@ -419,7 +410,7 @@ main{
         font-size: 15px;
         font-family: 'Grandstander', cursive;
         font-weight: 400;
-        color:#312727;
+        color: #dafcf0;
         margin: 10px;
     
     }
@@ -497,7 +488,7 @@ main{
         
         display: grid;
         grid-template-columns: 90%;
-        grid-template-rows: 400px 400px 400px 400px;
+        grid-template-rows: 400px 700px 700px 700px;
         grid-template-areas: "a1"
                              "a2"
                              "a3"
@@ -533,7 +524,7 @@ main{
         justify-content: center;
         align-items: center;
     }
-    
+
      /*Estilo de Texto de Promocion*/
     
     .estiloTextoPromocion{
@@ -659,6 +650,11 @@ main{
 
     }
 
+    .row{
+        justify-content: center;
+        margin: 25px;
+    }
+
 
                                                     /*HTML Quienes Somos*/   
 
@@ -686,12 +682,13 @@ main{
     .tituloQuienesSomos{
         background-image: linear-gradient(to left, rgb(0, 0, 0),rgb(255, 132, 0),rgb(255, 132, 0), rgb(0, 0, 0)) ;
         color: #ffffff;
+        text-align: center;
         font-size: 30px;
         font-family: 'Fredoka One', cursive;
         font-weight: 500;
         font-style: italic;
         padding: 10px;
-        margin-top: 25px;
+        margin:25px;
         border: ridge rgba(0, 0, 0, 0.782) 5px;
     }
     .parrafoQuienesSomos{
@@ -704,6 +701,16 @@ main{
         list-style:circle;
         margin-left: 15px;
         line-height: 20px;
+    }
+
+    .accordion{
+        margin: 50px;
+    }
+
+    .accordion-button{
+        color: #ff5900;
+        font-size: 25px;
+        font-weight: 500;
     }
 
 
@@ -845,8 +852,8 @@ main{
         /*Estilo de Imagenes de Pago*/
 
     .estiloImgPago{
-        width: 80%;
-        height: 60%;
+        width: 70%;
+        height: 40%;
         margin-top: 50px;
     }
 
@@ -1004,7 +1011,7 @@ main{
 
         display: grid;
         grid-template-columns: 32% 32% 32%;
-        grid-template-rows: 550px 550px;
+        grid-template-rows: 650px 650px;
         grid-template-areas: "a1 a2 a3"
                              "a4 a5 a6";
         justify-content: center;
@@ -1024,7 +1031,7 @@ main{
     justify-content:space-evenly;
     align-items: center;
     border: 2px solid black;
-    background-image: linear-gradient(rgb(0, 0, 0),rgb(0, 0, 0),rgb(0, 0, 0),rgb(255, 132, 0), rgb(255, 225, 0));
+    background-image: linear-gradient(rgb(0, 0, 0),rgb(0, 0, 0),rgb(0, 0, 0),rgb(255, 132, 0), rgb(60, 51, 41));
     height: 95%;
     width: 90%;
     
@@ -1041,8 +1048,8 @@ main{
 
     .estiloSubtituloEdad{
     
-        color: #000000;
-        font-size:  30px;
+        color: #dafcf0;
+        font-size:  20px;
         font-family: 'Fredoka One', cursive;
         font-weight: 100;
         padding-top: 20px;
@@ -1065,10 +1072,10 @@ main{
     /*Estilo de Parrafo de Edad*/
     
     .estiloParrafoEdad{
-        font-size: 15px;
+        font-size: 13px;
         font-family: 'Grandstander', cursive;
         font-weight: 400;
-        color:#312727;
+        color:#dafcf0;
         margin: 10px;
     
     }
@@ -1190,7 +1197,7 @@ main{
         justify-content: center;
         align-items: center;
     }
-    
+
     /*Estilo de Texto de Promocion*/
     
     .estiloTextoPromocion{
@@ -1209,16 +1216,20 @@ main{
     
     
     .estiloImgPromocion{
+        filter: grayscale(1);
         width: 60%;
         height: 65%;
         transition: all 1s;
-        filter: grayscale(1);
-    }
-    .estiloImgPromocion:hover{
-        transform: scale(1.1,1.1);
-        filter: grayscale(0);
 
     }
+    .estiloImgPromocion:hover{ 
+        transform: scale(1.1,1.1);
+        filter: grayscale(0);
+        
+
+
+    }
+
 
     /*Estilo de Parrafo de Promocion*/
     
@@ -1330,6 +1341,11 @@ main{
 
     }
 
+    .row{
+        justify-content: center;
+        margin: 25px;
+    }
+
 
 
 
@@ -1360,12 +1376,13 @@ main{
     .tituloQuienesSomos{
         background-image: linear-gradient(to left, rgb(0, 0, 0),rgb(255, 132, 0),rgb(255, 132, 0), rgb(0, 0, 0));
         color: #ffffff;
+        text-align: center;
         font-size: 40px;
         font-family: 'Fredoka One', cursive;
         font-weight: 500;
         font-style: italic;
         padding: 10px;
-        margin-top: 25px;
+        margin: 50px;
         border: ridge rgba(0, 0, 0, 0.782) 5px;
     }
     .parrafoQuienesSomos{
@@ -1379,10 +1396,20 @@ main{
         margin-left: 15px;
         line-height: 30px;
     }
+    .accordion{
+        margin: 50px;
+    }
+
+    .accordion-button{
+        color: #ff5900;
+        font-size: 25px;
+        font-weight: 500;
+    }
   
 
 
 }
+
 
 
 
