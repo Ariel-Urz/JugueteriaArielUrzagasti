@@ -1,0 +1,120 @@
+
+/*INDEX MOBILE*/
+                                    /*FOOTER*/
+
+    
+    footer{
+        background-color: black;
+    }
+
+                             /*ESTRUCUTURA DEL FOOTER*/       
+
+    .estiloFooter{
+        display:grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 300px 300px;
+        grid-template-areas: "a1 a2"
+                             "a3 a3";
+        justify-content: center;
+        column-gap: 55px;
+    }
+
+        /*Contenedores del Footer*/
+
+    .contenedorFooter{
+       display: flex;
+       flex-direction: column;
+       width: 70%;
+       height: 250px;
+
+    }
+
+        /*Posicion del Contenedor de Redes*/
+    
+    .estiloRedes{
+        grid-area: a3;
+        
+    }
+
+        /*Estilo del Iframe Mapa*/
+    
+    .estiloIframe{
+        width: 100%;
+        height: 100%;
+
+    }
+    
+        /*Estilo de Imagenes de Redes*/
+
+    .estiloImgRedes{
+        height: 25%;
+        filter: grayscale(1);
+        transition: all 1s;
+         
+    }
+    .estiloImgRedes:hover{
+        filter: grayscale(0);
+        transform: scale(1.5,1.5);
+    }
+
+
+                                /*INDEX DEL DESKTOP*/
+
+
+                          /*ESTRUCTURA DEL FOOTER DESKTOP*/
+
+    footer{
+        background-color: black;
+    }
+    .posicionSubt{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .estiloFooter{
+        display:flex;
+        flex-direction: row;
+        
+    }
+    .contenedorFooter{
+       display: flex;
+       flex-direction: column;
+       width: 70%;
+       height: 250px;
+       margin: 10px;
+       align-items: center;
+       
+    }
+
+        /*Poscicion de Contenedor de Redes*/
+    
+    .estiloRedes{
+        grid-area: a3;
+        
+    }
+
+        /*Estilo de Iframe Mapa*/
+    
+    .estiloIframe0{
+        width: 45%;
+        height: 60%;
+        padding: 10px;
+
+    }
+
+        /*Estilo Imagenes de Redes*/
+
+
+    .estiloImgRedes{
+        width: 20%;
+        padding-left: 10px;
+        height: 20%;
+        filter: grayscale(1);
+        transition: all 1s;
+    }
+
+    .estiloImgRedes:hover{
+    filter: grayscale(0);
+    transform: scale(1.5,1.5);
+    }
