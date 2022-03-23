@@ -1,4 +1,5 @@
 /*COLORES*/
+/*FUENTES*/
 /*INDEX MOBILE*/
 /*ESTRUCUTURA DEL HEAD*/
 .head {
@@ -76,7 +77,7 @@
 
 .estiloTextoMenu {
   font-size: 19px;
-  font-family: 'Grandstander', cursive;
+  font-family: "Grandstander", cursive;
   font-weight: 700;
   color: #000000;
   text-decoration-line: none;
@@ -89,7 +90,7 @@ main {
 .estiloTextoUno {
   color: #000000;
   font-size: 30px;
-  font-family: 'Fredoka One', cursive;
+  font-family: "Fredoka One", cursive;
   font-weight: 100;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -102,7 +103,7 @@ main {
 .estiloTextoFooter {
   color: #ff6600;
   font-size: 20px;
-  font-family: 'Fredoka One', cursive;
+  font-family: "Fredoka One", cursive;
   font-weight: 100;
   padding: 30px;
   margin-right: 30px; }
@@ -111,7 +112,7 @@ main {
 .parrafoFooter {
   color: #ffae00;
   font-size: 15px;
-  font-family: 'Fredoka One', cursive; }
+  font-family: "Fredoka One", cursive; }
 
 .btn-primary {
   background-color: black;
@@ -149,30 +150,27 @@ main {
     align-items: center;
     list-style-type: none; }
   /*ESTRUCUTURA DEL MAIN INDEX MOBILE*/
-  .grillaMain {
+  .grillaMainGeneral, .grillaMain, .grillaMainJuguetes, .grillaMainEdad, .grillaMainPromocion {
+    display: grid;
     grid-template-columns: 90%;
-    grid-template-rows: 500px 500px 500px 500px 500px;
+    grid-template-rows: 650px 650px 650px 650px 650px;
     grid-template-areas: "a1" "a2" "a3" "a4" "a5";
     justify-content: center;
     align-items: center; }
   /*Contenedor de Promocion*/
-  .cardPromocion {
-    background-image: linear-gradient(to left, black, #ff8400, #ff8400, black);
-    border-radius: 100px;
+  .contenedorGeneral, .cardPromocion, .contenedor {
     height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+  .cardPromocion {
+    background-image: linear-gradient(to left, black, #ff8400, #ff8400, black);
+    border-radius: 100px; }
   /*Contenedor de Populares,Novedades,Medio de Pago,Forma de Envio*/
   .contenedor {
     background-image: linear-gradient(to left, #dafcf0, #ff8400, #ff8400, #dafcf0);
-    border: solid black 2px;
-    height: 450px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    border: solid black 2px; }
   /*Estilo de Imagen de Promocion, Populares, Novedades*/
   .estiloImg {
     width: 70%;
@@ -189,7 +187,7 @@ main {
   .estiloParrafo {
     color: black;
     font-size: 16px;
-    font-family: 'Fredoka One', cursive; }
+    font-family: "Fredoka One", cursive; }
   /*FOOTER*/
   footer {
     background-color: black; }
@@ -225,12 +223,8 @@ main {
   /*HTML JUGUETES MOBILE*/
   /*Estrctura del Main de HTML Juguetes MOBILE*/
   .grillaMainJuguetes {
-    display: grid;
-    grid-template-columns: 90%;
     grid-template-rows: 550px 550px 550px 550px 550px 550px;
     grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6";
-    justify-content: center;
-    align-items: center;
     margin-bottom: 25px; }
   /*Contenedores del Main de HTML Juguetes*/
   .contenedorJuguetes {
@@ -249,29 +243,38 @@ main {
   .estiloTextoJuguetes {
     color: #000000;
     font-size: 30px;
-    font-family: 'Fredoka One', cursive;
+    font-family: "Fredoka One", cursive;
     font-weight: 100; }
   /*Estilo de Texto de los Contenedores*/
   .estiloTextoContedor {
     background-color: #ffffff;
     border-radius: 15px;
     font-size: 20px;
-    font-family: 'Grandstander', cursive;
+    font-family: "Grandstander", cursive;
     font-weight: 600;
     color: #000000;
     text-decoration-line: underline;
     line-height: 25px; }
+  /*ESTILO BOTONES*/
+  .btn {
+    font-size: 15px;
+    background-color: black;
+    color: #ff5100;
+    font-family: "Grandstander", cursive;
+    font-weight: 200; }
+  .btn:hover {
+    color: #dafcf0; }
+  .btn-primary {
+    font-size: 15px;
+    background-color: black;
+    color: red;
+    font-family: "Grandstander", cursive;
+    font-weight: 200; }
   /*HTML EDAD MOBILE*/
   /*Estructura del Main HTML de EDAD MOBILE*/
   body {
     background-color: white; }
   .grillaMainEdad {
-    display: grid;
-    grid-template-columns: 90%;
-    grid-template-rows: 650px 650px 650px 650px 650px 650px;
-    grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6";
-    justify-content: center;
-    align-items: center;
     margin-bottom: 25px; }
   /*Contenedores del Main de HTML EDAD*/
   .contenedorEdad {
@@ -290,7 +293,7 @@ main {
   .estiloSubtituloEdad {
     color: #dafcf0;
     font-size: 25px;
-    font-family: 'Fredoka One', cursive;
+    font-family: "Fredoka One", cursive;
     font-weight: 100;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -298,14 +301,14 @@ main {
   /*Estilo contendedor de texto de Edad*/
   .estiloTextoContedorEdad {
     font-size: 15px;
-    font-family: 'Grandstander', cursive;
+    font-family: "Grandstander", cursive;
     font-weight: 650;
     color: #000000;
     text-decoration-line: none; }
   /*Estilo Parrafo de Edad*/
   .estiloParrafoEdad {
     font-size: 15px;
-    font-family: 'Grandstander', cursive;
+    font-family: "Grandstander", cursive;
     font-weight: 400;
     color: #dafcf0;
     margin: 10px; }
@@ -334,7 +337,7 @@ main {
   .estiloTextoMarca {
     color: #000000;
     font-size: 30px;
-    font-family: 'Fredoka One', cursive;
+    font-family: "Fredoka One", cursive;
     font-weight: 100;
     text-align: center;
     padding-top: 20px; }
@@ -343,13 +346,10 @@ main {
   body {
     background-color: #00fffb; }
   .grillaMainPromocion {
-    display: grid;
     grid-template-columns: 90%;
     grid-template-rows: 400px 700px 700px 700px;
     grid-template-areas: "a1" "a2" "a3" "a4";
     justify-content: space-evenly;
-    justify-items: center;
-    align-items: center;
     margin-bottom: 25px;
     row-gap: 20px; }
   /*Contenedor del Video*/
@@ -372,7 +372,7 @@ main {
   .estiloTextoPromocion {
     color: #000000;
     font-size: 30px;
-    font-family: 'Fredoka One', cursive;
+    font-family: "Fredoka One", cursive;
     font-weight: 100;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -384,7 +384,7 @@ main {
   /*Estilo de Parrafo de Promocion*/
   .estiloParrafoPromocion {
     font-size: 20px;
-    font-family: 'Grandstander', cursive;
+    font-family: "Grandstander", cursive;
     font-weight: 400;
     color: #000000;
     padding-left: 15px;
@@ -396,7 +396,7 @@ main {
   /*Subtitulo de Contacto*/
   .mensaje {
     font-size: 30px;
-    font-family: 'Fredoka One', cursive;
+    font-family: "Fredoka One", cursive;
     font-weight: 300;
     margin-top: 100px; }
   /*Contenedor de Formulario*/
@@ -419,7 +419,7 @@ main {
   /*Texto de Formulario*/
   .estiloTextoFormulario {
     font-size: 20px;
-    font-family: 'Fredoka One', cursive;
+    font-family: "Fredoka One", cursive;
     font-weight: 300;
     width: 100%; }
   /*Boton de Formulario*/
@@ -429,7 +429,7 @@ main {
     font-size: 18px;
     background-color: #000000;
     color: #000000;
-    font-family: 'Grandstander', cursive;
+    font-family: "Grandstander", cursive;
     border-radius: 25px;
     animation-name: Boton;
     animation-duration: 3s;
@@ -468,14 +468,14 @@ main {
     color: #ffffff;
     text-align: center;
     font-size: 30px;
-    font-family: 'Fredoka One', cursive;
+    font-family: "Fredoka One", cursive;
     font-weight: 500;
     font-style: italic;
     padding: 10px;
     margin: 25px;
     border: ridge rgba(0, 0, 0, 0.782) 5px; }
   .parrafoQuienesSomos {
-    font-family: 'Grandstander', cursive;
+    font-family: "Grandstander", cursive;
     font-size: 14px;
     font-weight: 300;
     font-style: italic;
@@ -486,8 +486,10 @@ main {
   .accordion {
     margin: 50px; }
   .accordion-button {
-    color: #ff5900;
     font-size: 25px;
+    background-color: black;
+    color: #ff5900;
+    font-family: "Grandstander", cursive;
     font-weight: 500; } }
 
 /*DESKTOP*/
@@ -538,16 +540,18 @@ main {
     justify-items: center;
     align-items: center; }
   /*Contenedor de Promocion*/
+  .contenedorGeneral1, .cardPromocion, .contenedor, .contenedorFooter, .contenedorJuguetes, .contenedorEdad, .contenedorIframe, .contenedorPromocion {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .cardPromocion {
     background-image: linear-gradient(to left, black, #ff8400, #ff8400, black);
     border-radius: 100px;
     width: 75%;
     height: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-area: a1;
-    justify-content: center; }
+    grid-area: a1; }
   #carouselExampleIndicators {
     grid-area: a1;
     width: 60%; }
@@ -555,12 +559,7 @@ main {
   .contenedor {
     background-image: linear-gradient(to left, #dafcf0, #ff8400, #ff8400, #dafcf0);
     border: solid black 2px;
-    width: 90%;
-    height: 450px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    width: 90%; }
   /*Estilo de Imagenes de los Contenedores*/
   .estiloImg {
     width: 55%;
@@ -578,7 +577,7 @@ main {
   .estiloParrafo {
     color: black;
     font-size: 16px;
-    font-family: 'Fredoka One', cursive; }
+    font-family: "Fredoka One", cursive; }
   /*ESTRUCTURA DEL FOOTER DESKTOP*/
   footer {
     background-color: black; }
@@ -590,12 +589,9 @@ main {
     display: flex;
     flex-direction: row; }
   .contenedorFooter {
-    display: flex;
-    flex-direction: column;
     width: 70%;
     height: 250px;
-    margin: 10px;
-    align-items: center; }
+    margin: 10px; }
   /*Poscicion de Contenedor de Redes*/
   .estiloRedes {
     grid-area: a3; }
@@ -628,10 +624,7 @@ main {
     margin-bottom: 25px; }
   /*Contenedores de Juguetes del Main*/
   .contenedorJuguetes {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     border: 2px solid black;
     background-image: radial-gradient(black, black, #ff8400, #ffe100);
     height: 95%;
@@ -644,17 +637,31 @@ main {
   .estiloTextoJuguetes {
     color: #000000;
     font-size: 30px;
-    font-family: 'Fredoka One', cursive;
+    font-family: "Fredoka One", cursive;
     font-weight: 400; }
   /*Estilo de los textos del Contenedor de Juguetes*/
   .estiloTextoContedor {
     font-size: 18px;
-    font-family: 'Grandstander', cursive;
-    font-family: 'Grandstander', cursive;
+    font-family: "Grandstander", cursive;
     font-weight: 600;
     color: #000000;
     text-decoration-line: underline;
     padding-left: 10px; }
+  /*ESTILO BOTONES*/
+  .btn {
+    font-size: 15px;
+    background-color: black;
+    color: #ff5100;
+    font-family: "Grandstander", cursive;
+    font-weight: 200; }
+  .btn:hover {
+    color: #dafcf0; }
+  .btn-primary {
+    font-size: 15px;
+    background-color: black;
+    color: red;
+    font-family: "Grandstander", cursive;
+    font-weight: 200; }
   /*HTML EDAD DESKTOP*/
   /*Estructura del Main HTML de EDAD desktop*/
   body {
@@ -671,10 +678,7 @@ main {
     margin-bottom: 25px; }
   /*Contenedores del Main de HTML EDAD*/
   .contenedorEdad {
-    display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
     border: 2px solid black;
     background-image: linear-gradient(black, black, black, #ff8400, #3c3329);
     height: 95%;
@@ -687,7 +691,7 @@ main {
   .estiloSubtituloEdad {
     color: #dafcf0;
     font-size: 20px;
-    font-family: 'Fredoka One', cursive;
+    font-family: "Fredoka One", cursive;
     font-weight: 100;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -695,14 +699,14 @@ main {
   /*Estilo de Texto de Edad*/
   .estiloTextoContedorEdad {
     font-size: 15px;
-    font-family: 'Grandstander', cursive;
+    font-family: "Grandstander", cursive;
     font-weight: 650;
     color: #000000;
     text-decoration-line: none; }
   /*Estilo de Parrafo de Edad*/
   .estiloParrafoEdad {
     font-size: 13px;
-    font-family: 'Grandstander', cursive;
+    font-family: "Grandstander", cursive;
     font-weight: 400;
     color: #dafcf0;
     margin: 10px; }
@@ -736,7 +740,7 @@ main {
   .estiloTextoMarca {
     color: #000000;
     font-size: 30px;
-    font-family: 'Fredoka One', cursive;
+    font-family: "Fredoka One", cursive;
     font-weight: 100;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -759,10 +763,7 @@ main {
   .contenedorIframe {
     width: 100%;
     height: 100%;
-    grid-area: a1;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+    grid-area: a1; }
   /*Estilo de Iframe*/
   .estiloIframe {
     width: 80%;
@@ -772,16 +773,12 @@ main {
     background-image: linear-gradient(black, black, black, #ff8400, #ffe100);
     width: 100%;
     height: 100%;
-    border: 2px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    border: 2px solid black; }
   /*Estilo de Texto de Promocion*/
   .estiloTextoPromocion {
     color: #ff8400;
     font-size: 30px;
-    font-family: 'Fredoka One', cursive;
+    font-family: "Fredoka One", cursive;
     font-weight: 100;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -798,7 +795,7 @@ main {
   /*Estilo de Parrafo de Promocion*/
   .estiloParrafoPromocion {
     font-size: 20px;
-    font-family: 'Grandstander', cursive;
+    font-family: "Grandstander", cursive;
     font-weight: 400;
     color: #000000;
     padding-left: 15px;
@@ -810,7 +807,7 @@ main {
   /*Subtitulo de Contacto*/
   .mensaje {
     font-size: 30px;
-    font-family: 'Fredoka One', cursive;
+    font-family: "Fredoka One", cursive;
     font-weight: 300;
     margin-top: 100px;
     margin-left: 20px; }
@@ -835,35 +832,65 @@ main {
   /*Estilo de Texto de Formulario*/
   .estiloTextoFormulario {
     font-size: 20px;
-    font-family: 'Fredoka One', cursive;
+    font-family: "Fredoka One", cursive;
     font-weight: 300;
     width: 75%; }
-  /*Estilo de Boton de Formulario*/
   .estiloBoton {
+    font-size: 25px;
+    background-color: black;
+    color: orange;
+    font-family: "Grandstander", cursive;
+    font-weight: 500;
     width: 150px;
     height: 40px;
-    font-size: 18px;
-    background-color: #000000;
-    color: #000000;
-    font-family: 'Grandstander', cursive;
-    border-radius: 25px;
-    transition: 1s;
-    animation-name: Boton;
-    animation-duration: 3s;
-    animation-iteration-count: infinite; }
-  .estiloBoton:hover {
-    transform: scale(1.2, 1.2); }
-  @keyframes Boton {
-    0% {
-      background-color: black; }
-    25% {
-      background-color: red; }
-    50% {
-      background-color: orangered; }
-    75% {
-      background-color: orange; }
-    100% {
-      background-color: #ff5900; } }
+    font-family: "Grandstander", cursive;
+    border-radius: 25px; }
+  .estiloBoton1 {
+    font-size: 20px;
+    background-color: white;
+    color: red;
+    font-family: "Grandstander", cursive;
+    font-weight: 500;
+    width: 150px;
+    height: 40px;
+    font-family: "Grandstander", cursive;
+    border-radius: 25px; }
+  /*Estilo de Boton de Formulario*/
+  /*.estiloBoton{
+        width: 150px;
+        height: 40px;
+        font-size: 18px;
+        background-color: #000000;
+        color: #000000;
+        font-family: $fuenteUno;
+        border-radius: 25px;
+        transition: 1s;
+        animation-name: Boton;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+
+    }
+    .estiloBoton:hover{
+        transform: scale(1.2,1.2);
+    }
+    @keyframes Boton{
+        0%{
+            background-color: black;
+        }
+        25%{
+            background-color: red;
+        }
+        50%{
+            background-color: orangered;
+        }
+        75%{
+            background-color: orange;
+        }
+        100%{
+            background-color: #ff5900;
+        }
+
+    }*/
   .row {
     justify-content: center;
     margin: 25px; }
@@ -888,14 +915,14 @@ main {
     color: #ffffff;
     text-align: center;
     font-size: 40px;
-    font-family: 'Fredoka One', cursive;
+    font-family: "Fredoka One", cursive;
     font-weight: 500;
     font-style: italic;
     padding: 10px;
     margin: 50px;
     border: ridge rgba(0, 0, 0, 0.782) 5px; }
   .parrafoQuienesSomos {
-    font-family: 'Grandstander', cursive;
+    font-family: "Grandstander", cursive;
     font-size: 20px;
     font-weight: 300;
     font-style: italic;
