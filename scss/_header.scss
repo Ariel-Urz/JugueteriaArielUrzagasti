@@ -1,9 +1,9 @@
-    
-                
-                /*INDEX MOBILE*/
-    
-        /*ESTRUCUTURA DEL HEAD*/
+                                                          /*MOBILE*/      
 
+    @media screen and (max-width:600px){
+
+    
+                         /*ESTRUCUTURA DEL HEAD MOBILE*/
     .head{
 
         flex-direction: column;
@@ -11,57 +11,64 @@
         align-items: center;
         border-bottom: 2px solid black;
 
-        &__#imgLogo{
-            padding-right: 20px;
-            transition: all 1.5s;
-        }
-        &__#imgLogo:hover{
 
-            transform:scale(1.1,1.1);
+         /*Titulo de la Pagina*/
+
+        & .estiloTitulo{
+            font-family: 'Luckiest Guy', cursive;
+            font-size: 50px;
+            font-weight: 100;
+            text-align: center;
+            text-decoration-line:underline;
+            background:linear-gradient( to right,#ff6f00,#ff6f00,#000000,#040404 );
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+  
         
-        }
-
-        /*Titulo de la Pagina*/
-
-        &__.estiloTitulo{
-        color: $colorTitulo;
-        font-family: 'Luckiest Guy', cursive;
-        font-size: 50px;
-        font-weight: 100;
-        text-align: center;
-        text-decoration-line:underline;
-    
     }
 
         /*Contenedor del Menu de Navegacion*/
 
-        &__.contenedorMenu{
+    .contenedorMenu{
 
         background-image: $colorContenedor2;
         margin: 15px;
+
+                /*Estilo de los UL de la Paginas Mobile*/
+
+        & ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+
+            & .estiloTextoMenu{
+
+                font-size: 19px;
+                font-family: $fuenteUno;
+                font-weight: 700;
+                color:#000000;
+                text-decoration-line: none;
+                line-height: 2;
+               
+            }
+        }
              
     }
 
-        /*Estilo de los UL de la Paginas Mobile*/
-
-        &__ul{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        list-style-type: none;
-    }
-
-        
-    }
-
-    
+}
 
 
-                         /*INDEX DEL DESKTOP*/
 
 
-       /*ESTRUCUTURA DEL HEAD DESKTOP*/
+                                                                /*TABLET*/
+
+    @media screen and (min-width:600px) and (max-width:992px){
+
+                /*ESTRUCUTURA DEL HEAD TABLET*/
 
     .head{
 
@@ -70,39 +77,37 @@
         align-items: center;
         border-bottom: 2px solid black;
 
+                /*Estilo del Titulo de la Pagina*/
 
-         /*Estilo del Titulo de la Pagina*/
-
-        &__.estiloTitulo{
-            color: $colorTitulo;
+        & .estiloTitulo{
             font-family: 'Luckiest Guy', cursive;
             font-size: 70px;
             font-weight: 100;
             text-align: center;
             text-decoration-line:underline;
+            background:linear-gradient( to top,#ff6f00,#ff6f00,#000000,#040404 );
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
     
+        }
     }
+
+
 
         /*Contendero del Menu*/
 
-        &__.contenedorMenu{
+    .contenedorMenu{
 
-            background-image: $colorContenedor2;
-            margin: 15px;
-            height: 150px;  
-            border: solid black 1px;
-            transition: all 1.5s;
-            z-index: 1;
-        
-    }
-        &__.contenedorMenu:hover{
-            transform: scale(0.9,0.8);
-    }
-    
+        background-image: $colorContenedor2;
+        margin: 15px;
+        height: 150px;  
+        transition: all 1.5s;
+        z-index: 1;
 
-        /*Estilo de los UL de la Paginas Desktop*/
+                /*Estilo de los UL de la Paginas Desktop*/
 
-        &__ul{
+        & ul{
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
@@ -111,7 +116,98 @@
             height: 75px;
             width: 100%;
             flex-wrap: wrap;
+
+            & .estiloTextoMenu{
+
+                font-size: 19px;
+                font-family: $fuenteUno;
+                font-weight: 700;
+                color:#000000;
+                text-decoration-line: none;
+                line-height: 2;
+               
+            }
+        }
+        
+    }
+    .contenedorMenu:hover{
+        transform: scale(0.9,0.8);
+    }
+    
+
+}
+
+
+
+                                                                 /*DESKTOP*/
+
+
+    @media screen and (min-width:992px){
+
+                  /*ESTRUCUTURA DEL HEAD DESKTOP*/
+
+    .head{
+
+        flex-direction: row-reverse;
+        justify-content:center;
+        align-items: center;
+        border-bottom: 2px solid black;
+
+                /*Estilo del Titulo de la Pagina*/
+
+        & .estiloTitulo{
+            font-family: 'Luckiest Guy', cursive;
+            font-size: 70px;
+            font-weight: 100;
+            text-align: center;
+            text-decoration-line:underline;
+            background:linear-gradient( to top,#ff6f00,#ff6f00,#000000,#040404 );
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+    
+        }
     }
 
-    }
 
+
+        /*Contendero del Menu*/
+
+    .contenedorMenu{
+
+        background-image: $colorContenedor2;
+        margin: 15px;
+        height: 150px;  
+        transition: all 1.5s;
+        z-index: 1;
+
+                /*Estilo de los UL de la Paginas Desktop*/
+
+        & ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            list-style-type: none;
+            height: 75px;
+            width: 100%;
+            flex-wrap: wrap;
+
+            & .estiloTextoMenu{
+
+                font-size: 19px;
+                font-family: $fuenteUno;
+                font-weight: 700;
+                color:#000000;
+                text-decoration-line: none;
+                line-height: 2;
+               
+            }
+        }
+        
+    }
+    .contenedorMenu:hover{
+        transform: scale(0.9,0.8);
+    }
+    
+    }
